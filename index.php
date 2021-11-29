@@ -15,7 +15,7 @@
     <div class="content">
         <h1>CryptPaste</h1>
         <h2>The free open source way to store encrypted text.</h2>
-        <a href="https://github.com" style="font-size: 30px;">Click here to download!</a> <br> <br>
+        <a href="https://github.com/Timeox2k/CryptPaste" style="font-size: 30px;">Click here to download!</a> <br> <br>
         <p style="font-size: 30px;">or just click <a style="font-size: 30px;" href="https://paste.softwarelara.com/post.php">HERE</a> to use our own instance to create some pastes.</p>
     </div>
    
