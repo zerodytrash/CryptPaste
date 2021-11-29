@@ -4,6 +4,10 @@
 ## How it works
 First your input is encrypted in the browser with javascript, then it is encrypted with php with AES-256 just like decrypting, we don't store keys. So even in case of a database breach nothing can be leaked. This could be extended with for example a login and a private area. 
 
+## Demo
+https://paste.softwarelara.com/
+## 
+
 - Material Design Lite
 - CryptoLib by Google
 
