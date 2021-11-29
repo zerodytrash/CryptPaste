@@ -10,8 +10,8 @@ if (isset($_POST["encryptedText"])) {
         $encryptionKey = $_POST["encryptedTextKey"];
         $cryptedTextStepTwo = encrypt($cryptedTextStepOne, $encryptionKey);
 
-        if (strlen($_POST["encryptedText"]) > 5) {
-            if (strlen($_POST["encryptedTextKey"]) > 5) {
+        if (strlen($_POST["encryptedText"]) > 4) {
+            if (strlen($_POST["encryptedTextKey"]) > 4) {
                 createPaste($cryptedTextStepTwo);
                 $error = "Paste has been uploaded.";
             } else {
