@@ -10,5 +10,5 @@ First you upload everything to your WebServer, then you open /admin/config.php t
 
 ## What you need
 
--WebServer with PHP 7+
--MySQL Database
+- WebServer with PHP 7+
+- MySQL Database
