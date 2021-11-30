@@ -63,7 +63,7 @@ if (isset($_POST["encryptedText"])) {
     <div class="content">
         <h4><?php echo $error ?></h4>
         <textarea class="mdl-textfield__input" type="text" name="textInput" id="textInput" placeholder="Paste your Text here"></textarea> <br>
-        <input class="mdl-textfield__input" type="text" name="encryptionKey" id="encryptionKey" placeholder="Encryption key"> <br>
+        <input class="mdl-textfield__input" type="password" name="encryptionKey" id="encryptionKey" placeholder="Encryption key"> <br>
         <p>(Note: We do not store this key. If you lose it, your text is gone. Make sure you keep it safe!)</p> <br>
         <input class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type="button" value="Encrypt" name="submitButton" onclick="process();">
 
