@@ -62,7 +62,7 @@ if (isset($_GET["id"])) {
         <h6>Since we do not store keys ourselves, we have no way of knowing whether the key was correct or incorrect. If the field below is empty, the key will be wrong. If you see text below that makes sense, then the key was correct.</h6>
         <textarea name="result" id="result" cols="80" rows="30" disabled>If you can see this, then the decryption-key was wrong.</textarea>
         <script>
-            var ciphertext = CryptoJS.AES.decrypt('<?php echo $stepOne ?>', '<?php echo $key ?>');
+            var ciphertext = CryptoJS.AES.decrypt(<?php echo json_encode($stepOne) ?>, <?php echo json_encode($key) ?>);
             document.getElementById("result").value = ciphertext.toString(CryptoJS.enc.Utf8);
         </script>
         <a href="<?php echo $web_url ?>">Click here to upload your own encrypted Paste!</a>
