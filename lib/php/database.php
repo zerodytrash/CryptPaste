@@ -22,13 +22,11 @@ function setup()
     }
 
     $installerFile = "install.php";
-    if (!unlink($installerFile)) { 
-        echo ("$file_pointer cannot be deleted due to an error. Please delete the install.php file yourself."); 
-    } 
-    else { 
-        echo ("$installerFile has been deleted!"); 
-    } 
-
+    if (!unlink($installerFile)) {
+        echo ("$file_pointer cannot be deleted due to an error. Please delete the install.php file yourself.");
+    } else {
+        echo ("$installerFile has been deleted!");
+    }
 }
 
 function createPaste($text)
@@ -45,7 +43,7 @@ function createPaste($text)
         $stmt->execute();
 
         while ($row = $stmt->fetch()) {
-            echo "<h4>Use this URL to share the Paste: <a href='"  .  $web_url . "/view.php?id=" . $row["id"] . "'>" . $web_url. "/view.php?id=" . $row["id"] . "</a></h4>";
+            echo "<h4>Use this URL to share the Paste: <a href='"  .  $web_url . "/view.php?id=" . $row["id"] . "'>" . $web_url . "/view.php?id=" . $row["id"] . "</a></h4>";
         }
     } catch (PDOException $e) {
         echo "</br>" . $e;
