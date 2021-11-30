@@ -14,12 +14,21 @@ function setup()
         );");
 
         echo "Done creating Table! </br>";
-        echo "Setup completed! </br> Thanks for using CryptPaste <3";
+        echo "Setup completed! </br> Thanks for using CryptPaste <3 </br>";
 
         $stmt->execute();
     } catch (PDOException $e) {
         echo "</br>" . $e;
     }
+
+    $installerFile = "install.php";
+    if (!unlink($installerFile)) { 
+        echo ("$file_pointer cannot be deleted due to an error. Please delete the install.php file yourself."); 
+    } 
+    else { 
+        echo ("$installerFile has been deleted!"); 
+    } 
+
 }
 
 function createPaste($text)
